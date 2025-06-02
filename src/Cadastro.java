@@ -22,125 +22,125 @@ public class Cadastro extends JFrame {
 
         //Tipo
         tipoLabel = new JLabel("Tipo");
-        tipoLabel.setBounds(20, 20, 100, 25);
+        tipoLabel.setBounds(30, 30, 40, 25);
         String[] tipos = {"Física", "Jurídica"};
         tipoCombo = new JComboBox<>(tipos);
-        tipoCombo.setBounds(124, 20, 100, 25);
+        tipoCombo.setBounds(70, 30, 100, 25);
 
         //CPF/CPNPJ
         cpfLabel = new JLabel("CPF/CNPJ ...");
-        cpfLabel.setBounds(228, 20, 100, 25);
+        cpfLabel.setBounds(180, 30, 80, 25);
         cpfField = new JTextField();
-        cpfField.setBounds(332, 20, 200, 25);
+        cpfField.setBounds(280, 30, 150, 25);
 
         //Fornecedor
         fornecedorLabel = new JLabel("Fornecedor");
-        fornecedorLabel.setBounds(536, 20, 100, 25);
+        fornecedorLabel.setBounds(450, 30, 120, 25);
         fornecedorCheck = new JCheckBox();
-        fornecedorCheck.setBounds(640, 20, 100, 25);
+        fornecedorCheck.setBounds(540, 30, 100, 25);
 
         //Nome
         nomeLabel = new JLabel("Nome");
-        nomeLabel.setBounds(20, 29, 100, 25);
+        nomeLabel.setBounds(30, 70, 50, 25);
         nomeField = new JTextField();
-        nomeField.setBounds(124, 29, 640, 25);
+        nomeField.setBounds(70, 70, 500, 25);
 
         //RG
         rgLabel = new JLabel("RG/Inscrição Estadual");
-        rgLabel.setBounds(20, 33, 100, 25);
+        rgLabel.setBounds(30, 100, 150, 25);
         rgField = new JTextField();
-        rgField.setBounds(124, 33, 100, 25);
+        rgField.setBounds(70, 100, 100, 25);
 
         //Órgão Expedidor
         orgaoexLabel = new JLabel("Órgão Expedidor");
-        orgaoexLabel.setBounds(228, 33, 100, 25);
+        orgaoexLabel.setBounds(180, 100, 120, 25);
         orgaoexField = new JTextField();
-        orgaoexField.setBounds(332, 33, 100, 25);
+        orgaoexField.setBounds(280, 100, 150, 25);
 
         //Email
         emailLabel = new JLabel("Email");
-        emailLabel.setBounds(20, 37, 100, 25);
+        emailLabel.setBounds(30, 130, 50, 25);
         emailField = new JTextField();
-        emailField.setBounds(124, 37, 200, 25);
+        emailField.setBounds(70, 130, 200, 25);
 
         //CEP
         cepLabel = new JLabel("CEP");
-        cepLabel.setBounds(328, 37, 100, 25);
+        cepLabel.setBounds(280, 130, 40, 25);
         cepField = new JTextField();
-        cepField.setBounds(432, 37, 200, 25);
+        cepField.setBounds(320, 130, 100, 25);
 
         //País
         paisLabel = new JLabel("País");
-        paisLabel.setBounds(20, 41, 100, 25);
+        paisLabel.setBounds(30, 150, 40, 25);
         paisField = new JTextField();
-        paisField.setBounds(124, 44, 204, 25);
+        paisField.setBounds(70, 130, 80, 25);
 
         //UF
         ufLabel = new JLabel("UF...");
-        ufLabel.setBounds(328, 44, 100, 25);
+        ufLabel.setBounds(280, 150, 30, 25);
         ufField1 = new JTextField();
-        ufField1.setBounds(432, 44, 25, 25);
+        ufField1.setBounds(320, 150, 30, 25);
         ufField2 = new JTextField();
-        ufField2.setBounds(461, 44, 200, 25);
+        ufField2.setBounds(630, 150, 50, 25);
 
         //Município
         municipioLabel = new JLabel("Município");
-        municipioLabel.setBounds(20, 48, 100, 25);
+        municipioLabel.setBounds(30, 170, 70, 25);
         municipioField = new JTextField();
-        municipioField.setBounds(124, 48, 300, 25);
+        municipioField.setBounds(70, 170, 500, 25);
 
         //Logradouro
         logradouroLabel = new JLabel("Logradouro");
-        logradouroLabel.setBounds(20, 52, 100, 25);
+        logradouroLabel.setBounds(30, 200, 80, 25);
         logradouroField = new JTextField();
-        logradouroField.setBounds(124, 48, 300, 25);
+        logradouroField.setBounds(70, 200, 200, 25);
 
         //Número
         numeroLabel = new JLabel("Número");
-        numeroLabel.setBounds(20, 56, 100, 25);
+        numeroLabel.setBounds(30, 230, 60, 25);
         numeroField = new JTextField();
-        numeroField.setBounds(124, 56, 100, 25);
+        numeroField.setBounds(70, 230, 100, 25);
 
         //Complemento
         complementoLabel = new JLabel("Complemento");
-        complementoLabel.setBounds(228, 56, 100, 25);
+        complementoLabel.setBounds(180, 230, 100, 25);
         complementoField = new JTextField();
-        complementoField.setBounds(332, 56, 300, 25);
+        complementoField.setBounds(280, 230, 200, 25);
 
         //Bairro
         bairroLabel = new JLabel("Bairro");
-        bairroLabel.setBounds(20, 60, 100, 25);
+        bairroLabel.setBounds(30, 260, 50, 25);
         bairroField = new JTextField();
-        bairroField.setBounds(124, 60, 100, 25);
+        bairroField.setBounds(70, 100, 200, 25);
 
         //Telefone
         telefoneLabel = new JLabel("Telefone");
-        telefoneLabel.setBounds(228, 60, 100, 25);
+        telefoneLabel.setBounds(180, 260, 60, 25);
         telefoneField = new JTextField();
-        telefoneField.setBounds(332, 60, 100, 25);
+        telefoneField.setBounds(280, 260, 150, 25);
 
         //Situação
         situacaoLabel = new JLabel("Situação");
-        situacaoLabel.setBounds(436, 60, 100, 25);
+        situacaoLabel.setBounds(520, 260, 60, 25);
         ativoButton = new JRadioButton("Ativo");
-        ativoButton.setBounds(540, 60, 50, 25);
+        ativoButton.setBounds(580, 260, 60, 25);
         inativoButton = new JRadioButton("Inativo");
-        inativoButton.setBounds(590, 60, 50, 25);
+        inativoButton.setBounds(640, 260, 80, 25);
         situacaoGroup = new ButtonGroup();
         situacaoGroup.add(ativoButton);
         situacaoGroup.add(inativoButton);
 
         //Confirmar
         confirmarButton = new JButton("Confirmar");
-        confirmarButton.setBounds(20, 68, 85, 25);
+        confirmarButton.setBounds(30, 290, 100, 30);
 
         //Excluir
         excluirButton = new JButton("Excluir");
-        excluirButton.setBounds(109, 68, 85, 25);
+        excluirButton.setBounds(140, 290, 100, 30);
 
         //Limpar
         limparButton = new JButton("Limpar");
-        limparButton.setBounds(198, 68, 85, 25);
+        limparButton.setBounds(250, 290, 100, 30);
 
         //Adiciona componentes ao painel
         painel.add(tipoLabel);
