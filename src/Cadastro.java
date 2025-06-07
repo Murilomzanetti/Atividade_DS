@@ -11,10 +11,16 @@ public class Cadastro extends JFrame {
     private ButtonGroup situacaoGroup;
     private JButton confirmarButton, excluirButton, limparButton;
     private JPanel painel;
+    private JTextField[] fieldList = {
+        cpfField, nomeField, rgField, orgaoexField, emailField, cepField, paisField, ufField1, ufField2, municipioField, logradouroField, numeroField, complementoField, bairroField, telefoneField        
+    };
 
     public Cadastro(){
         super("Formulário de Cadastro");
         initialization();
+        fieldList = new JTextField[] {
+            cpfField, nomeField, rgField, orgaoexField, emailField, cepField, paisField, ufField1, ufField2, municipioField, logradouroField, numeroField, complementoField, bairroField, telefoneField
+        };
     }
 
     private void initialization() {
@@ -180,12 +186,14 @@ public class Cadastro extends JFrame {
         excluirButton.setBackground(Color.orange);
         excluirButton.setVerticalAlignment(JLabel.CENTER);
         excluirButton.setHorizontalAlignment(JLabel.CENTER);
+        excluirButton.addActionListener(e -> Excluir());
 
         //Limpar
         limparButton = new JButton("Limpar");
         limparButton.setBounds(330,490,140,30);
         limparButton.setVerticalAlignment(JLabel.CENTER);
         limparButton.setHorizontalAlignment(JLabel.CENTER);
+        limparButton.addActionListener(e -> Limpar());
 
         //Adiciona componentes ao painel
         painel.add(tipoLabel);
@@ -238,6 +246,18 @@ public class Cadastro extends JFrame {
 
     private void Confirmar() {
         JOptionPane.showMessageDialog(null, "Cadastro concluído", "Parabéns", JOptionPane.INFORMATION_MESSAGE);
+        Limpar();
+    }
+
+    private void Excluir() {
+        JOptionPane.showMessageDialog(null, "Cadastro excluído com sucesso", "Deletado", JOptionPane.INFORMATION_MESSAGE);
+        Limpar();
+    }
+
+    private void Limpar() {
+        for (JTextField field : fieldList) {
+            field.setText("");
+        }
     }
     public static void main(String[] args){
         new Cadastro();
