@@ -1,3 +1,4 @@
+import java.awt.*;
 import javax.swing.*;
 
 public class Cadastro extends JFrame {
@@ -22,125 +23,169 @@ public class Cadastro extends JFrame {
 
         //Tipo
         tipoLabel = new JLabel("Tipo");
-        tipoLabel.setBounds(30, 30, 40, 25);
+        tipoLabel.setBounds(30,110,170,30);
         String[] tipos = {"Física", "Jurídica"};
         tipoCombo = new JComboBox<>(tipos);
-        tipoCombo.setBounds(70, 30, 100, 25);
+        tipoCombo.setBounds(210,110,170,30);
+        tipoLabel.setVerticalAlignment(JLabel.CENTER);
+        tipoLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //CPF/CPNPJ
         cpfLabel = new JLabel("CPF/CNPJ ...");
-        cpfLabel.setBounds(180, 30, 80, 25);
+        cpfLabel.setBounds(390,110,170,30);
         cpfField = new JTextField();
-        cpfField.setBounds(280, 30, 150, 25);
+        cpfField.setBounds(580,110,200,30);
+        cpfLabel.setVerticalAlignment(JLabel.CENTER);
+        cpfLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //Fornecedor
         fornecedorLabel = new JLabel("Fornecedor");
-        fornecedorLabel.setBounds(450, 30, 120, 25);
+        fornecedorLabel.setBounds(800,110,170,30);
         fornecedorCheck = new JCheckBox();
-        fornecedorCheck.setBounds(540, 30, 100, 25);
+        fornecedorCheck.setBounds(1000,110,140,30);
+        fornecedorLabel.setVerticalAlignment(JLabel.CENTER);
+        fornecedorLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //Nome
         nomeLabel = new JLabel("Nome");
-        nomeLabel.setBounds(30, 70, 50, 25);
+        nomeLabel.setBounds(30,150,170,30);
         nomeField = new JTextField();
-        nomeField.setBounds(70, 70, 500, 25);
+        nomeField.setBounds(210,150,840,30);
+        nomeLabel.setVerticalAlignment(JLabel.CENTER);
+        nomeLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //RG
         rgLabel = new JLabel("RG/Inscrição Estadual");
-        rgLabel.setBounds(30, 100, 150, 25);
+        rgLabel.setBounds(30,190,170,30);
         rgField = new JTextField();
-        rgField.setBounds(70, 100, 100, 25);
+        rgField.setBounds(210,190,170,30);
+        rgLabel.setVerticalAlignment(JLabel.CENTER);
+        rgLabel.setHorizontalAlignment(JLabel.CENTER);
+        
 
         //Órgão Expedidor
         orgaoexLabel = new JLabel("Órgão Expedidor");
-        orgaoexLabel.setBounds(180, 100, 120, 25);
+        orgaoexLabel.setBounds(390,190,170,30);
         orgaoexField = new JTextField();
-        orgaoexField.setBounds(280, 100, 150, 25);
+        orgaoexField.setBounds(580,190,170,30);
+        orgaoexLabel.setVerticalAlignment(JLabel.CENTER);
+        orgaoexLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //Email
         emailLabel = new JLabel("Email");
-        emailLabel.setBounds(30, 130, 50, 25);
+        emailLabel.setBounds(30,230,170,30);
         emailField = new JTextField();
-        emailField.setBounds(70, 130, 200, 25);
+        emailField.setBounds(210,230,351,30);
+        emailLabel.setVerticalAlignment(JLabel.CENTER);
+        emailLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //CEP
         cepLabel = new JLabel("CEP");
-        cepLabel.setBounds(280, 130, 40, 25);
+        cepLabel.setBounds(580,230,170,30);
         cepField = new JTextField();
-        cepField.setBounds(320, 130, 100, 25);
+        cepField.setBounds(770,230,283,30);
+        cepLabel.setVerticalAlignment(JLabel.CENTER);
+        cepLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //País
         paisLabel = new JLabel("País");
-        paisLabel.setBounds(30, 150, 40, 25);
+        paisLabel.setBounds(30,270,170,30);
         paisField = new JTextField();
-        paisField.setBounds(70, 130, 80, 25);
+        paisField.setBounds(210,270,351,30);
+        paisLabel.setVerticalAlignment(JLabel.CENTER);
+        paisLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //UF
         ufLabel = new JLabel("UF...");
-        ufLabel.setBounds(280, 150, 30, 25);
+        ufLabel.setBounds(580,270,170,30);
         ufField1 = new JTextField();
-        ufField1.setBounds(320, 150, 30, 25);
+        ufField1.setBounds(770,270,75,30);
         ufField2 = new JTextField();
-        ufField2.setBounds(630, 150, 50, 25);
+        ufField2.setBounds(860,270,192,30);
+        ufLabel.setVerticalAlignment(JLabel.CENTER);
+        ufLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //Município
         municipioLabel = new JLabel("Município");
-        municipioLabel.setBounds(30, 170, 70, 25);
+        municipioLabel.setBounds(30,310,170,30);
         municipioField = new JTextField();
-        municipioField.setBounds(70, 170, 500, 25);
+        municipioField.setBounds(210,310,844,30);
+        municipioLabel.setVerticalAlignment(JLabel.CENTER);
+        municipioLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //Logradouro
         logradouroLabel = new JLabel("Logradouro");
-        logradouroLabel.setBounds(30, 200, 80, 25);
+        logradouroLabel.setBounds(30,350,170,30);
         logradouroField = new JTextField();
-        logradouroField.setBounds(70, 200, 200, 25);
+        logradouroField.setBounds(210,350,844,30);
+        logradouroLabel.setVerticalAlignment(JLabel.CENTER);
+        logradouroLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //Número
         numeroLabel = new JLabel("Número");
-        numeroLabel.setBounds(30, 230, 60, 25);
+        numeroLabel.setBounds(30,390,170,30);
         numeroField = new JTextField();
-        numeroField.setBounds(70, 230, 100, 25);
+        numeroField.setBounds(210,390,170,30);
+        numeroLabel.setVerticalAlignment(JLabel.CENTER);
+        numeroLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //Complemento
         complementoLabel = new JLabel("Complemento");
-        complementoLabel.setBounds(180, 230, 100, 25);
+        complementoLabel.setBounds(390,390,170,30);
         complementoField = new JTextField();
-        complementoField.setBounds(280, 230, 200, 25);
+        complementoField.setBounds(580,390,476,30);
+        complementoLabel.setVerticalAlignment(JLabel.CENTER);
+        complementoLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //Bairro
         bairroLabel = new JLabel("Bairro");
-        bairroLabel.setBounds(30, 260, 50, 25);
+        bairroLabel.setBounds(30,430,170,30);
         bairroField = new JTextField();
-        bairroField.setBounds(70, 100, 200, 25);
+        bairroField.setBounds(210,430,170,30);
+        bairroLabel.setVerticalAlignment(JLabel.CENTER);
+        bairroLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //Telefone
         telefoneLabel = new JLabel("Telefone");
-        telefoneLabel.setBounds(180, 260, 60, 25);
+        telefoneLabel.setBounds(390,430,170,30);
         telefoneField = new JTextField();
-        telefoneField.setBounds(280, 260, 150, 25);
+        telefoneField.setBounds(580,430,170,30);
+        telefoneLabel.setVerticalAlignment(JLabel.CENTER);
+        telefoneLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //Situação
         situacaoLabel = new JLabel("Situação");
-        situacaoLabel.setBounds(520, 260, 60, 25);
+        situacaoLabel.setBounds(770,430,130,30);
         ativoButton = new JRadioButton("Ativo");
-        ativoButton.setBounds(580, 260, 60, 25);
+        ativoButton.setBounds(920,430,70,30);
         inativoButton = new JRadioButton("Inativo");
-        inativoButton.setBounds(640, 260, 80, 25);
+        inativoButton.setBounds(990,430,77,30);
         situacaoGroup = new ButtonGroup();
         situacaoGroup.add(ativoButton);
         situacaoGroup.add(inativoButton);
+        situacaoLabel.setVerticalAlignment(JLabel.CENTER);
+        situacaoLabel.setHorizontalAlignment(JLabel.CENTER);
 
         //Confirmar
         confirmarButton = new JButton("Confirmar");
-        confirmarButton.setBounds(30, 290, 100, 30);
+        confirmarButton.setBounds(30,490,140,30);
+        confirmarButton.setBackground(Color.orange);
+        confirmarButton.setVerticalAlignment(JLabel.CENTER);
+        confirmarButton.setHorizontalAlignment(JLabel.CENTER);
+        confirmarButton.addActionListener(e -> Confirmar());
 
         //Excluir
         excluirButton = new JButton("Excluir");
-        excluirButton.setBounds(140, 290, 100, 30);
+        excluirButton.setBounds(180,490,140,30);
+        excluirButton.setBackground(Color.orange);
+        excluirButton.setVerticalAlignment(JLabel.CENTER);
+        excluirButton.setHorizontalAlignment(JLabel.CENTER);
 
         //Limpar
         limparButton = new JButton("Limpar");
-        limparButton.setBounds(250, 290, 100, 30);
+        limparButton.setBounds(330,490,140,30);
+        limparButton.setVerticalAlignment(JLabel.CENTER);
+        limparButton.setHorizontalAlignment(JLabel.CENTER);
 
         //Adiciona componentes ao painel
         painel.add(tipoLabel);
@@ -161,6 +206,9 @@ public class Cadastro extends JFrame {
         painel.add(cepField);
         painel.add(paisLabel);
         painel.add(paisField);
+        painel.add(ufLabel);
+        painel.add(ufField1);
+        painel.add(ufField2);
         painel.add(municipioLabel);
         painel.add(municipioField);
         painel.add(logradouroLabel);
@@ -183,9 +231,13 @@ public class Cadastro extends JFrame {
         //Configurações do frame
         this.setContentPane(painel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(600, 320);
+        this.setSize(1130,600);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
+    }
+
+    private void Confirmar() {
+        JOptionPane.showMessageDialog(null, "Cadastro concluído", "Parabéns", JOptionPane.INFORMATION_MESSAGE);
     }
     public static void main(String[] args){
         new Cadastro();
