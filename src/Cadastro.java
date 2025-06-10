@@ -11,15 +11,15 @@ public class Cadastro extends JFrame {
     private ButtonGroup situacaoGroup;
     private JButton confirmarButton, excluirButton, limparButton;
     private JPanel painel;
-    private JTextField[] fieldList = {
+    private JTextField[] fieldList = { //Crio um array para salvar os campos
         cpfField, nomeField, rgField, orgaoexField, emailField, cepField, paisField, ufField1, ufField2, municipioField, logradouroField, numeroField, complementoField, bairroField, telefoneField        
     };
 
     public Cadastro(){
         super("Formulário de Cadastro");
-        initialization();
+        initialization(); //Chamo a função inicializadora no método construtor
         fieldList = new JTextField[] {
-            cpfField, nomeField, rgField, orgaoexField, emailField, cepField, paisField, ufField1, ufField2, municipioField, logradouroField, numeroField, complementoField, bairroField, telefoneField
+            cpfField, nomeField, rgField, orgaoexField, emailField, cepField, ufField1, ufField2, municipioField, logradouroField, numeroField, complementoField, bairroField, telefoneField
         };
     }
 
@@ -102,7 +102,7 @@ public class Cadastro extends JFrame {
         //País
         paisLabel = new JLabel("País");
         paisLabel.setBounds(30,270,170,30);
-        paisField = new JTextField();
+        paisField = new JTextField("BRASIL");
         paisField.setBounds(210,270,351,30);
         paisLabel.setVerticalAlignment(JLabel.CENTER);
         paisLabel.setHorizontalAlignment(JLabel.CENTER);
@@ -251,17 +251,21 @@ public class Cadastro extends JFrame {
         this.setVisible(true);
     }
 
-    private void Confirmar() {
-        int result = JOptionPane.showConfirmDialog(null, "Quer mesmo finalizar o cadastro?", "Confirmar", JOptionPane.YES_NO_OPTION);
-        if (result == JOptionPane.YES_OPTION){
-        JOptionPane.showMessageDialog(null, "Cadastro concluído", "Parabéns", JOptionPane.INFORMATION_MESSAGE);
-        Limpar();
-        } else {
-            return;
+    private void Confirmar() { //Função do botão Confirmar
+        JPasswordField senhaField = new JPasswordField();
+        int opcao = JOptionPane.showConfirmDialog(null, senhaField, "Digite a senha:", JOptionPane.OK_CANCEL_OPTION);
+        if (opcao == JOptionPane.OK_OPTION){
+            String senha = new String(senhaField.getPassword());
+
+            if(senha.equals("1234")){ //Senha é 1234
+                JOptionPane.showMessageDialog(null, "Cadastro concluído", "Parabéns", JOptionPane.INFORMATION_MESSAGE);
+                Limpar();
+            } else {
+            JOptionPane.showMessageDialog(null, "Senha incorreta", "Erro de Senha:", JOptionPane.ERROR_MESSAGE);
+            }
         }
     }
-
-    private void Excluir() {
+    private void Excluir() { //Função do botão Excluir
         int result = JOptionPane.showConfirmDialog(null, "Tem certeza que quer excluir?", "Excluir", JOptionPane.YES_NO_OPTION);
         if (result == JOptionPane.YES_OPTION){
         JOptionPane.showMessageDialog(null, "Cadastro excluído com sucesso", "Deletado", JOptionPane.INFORMATION_MESSAGE);
@@ -271,9 +275,11 @@ public class Cadastro extends JFrame {
         }
     }
 
-    private void Limpar() {
-        for (JTextField field : fieldList) {
-            field.setText("");
+    private void Limpar() { 
+//Função de Limpar todos os campos. 
+//Ela foi muito usada no código e foi feita exclusivamente para o botão limpar
+        for (JTextField field : fieldList) { //Pega todos os campos da lista de campos
+            field.setText("");//e os deixa vazios
         }
     }
     public static void main(String[] args){
