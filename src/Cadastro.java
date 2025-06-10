@@ -252,13 +252,23 @@ public class Cadastro extends JFrame {
     }
 
     private void Confirmar() {
+        int result = JOptionPane.showConfirmDialog(null, "Quer mesmo finalizar o cadastro?", "Confirmar", JOptionPane.YES_NO_OPTION);
+        if (result == JOptionPane.YES_OPTION){
         JOptionPane.showMessageDialog(null, "Cadastro concluído", "Parabéns", JOptionPane.INFORMATION_MESSAGE);
         Limpar();
+        } else {
+            return;
+        }
     }
 
     private void Excluir() {
+        int result = JOptionPane.showConfirmDialog(null, "Tem certeza que quer excluir?", "Excluir", JOptionPane.YES_NO_OPTION);
+        if (result == JOptionPane.YES_OPTION){
         JOptionPane.showMessageDialog(null, "Cadastro excluído com sucesso", "Deletado", JOptionPane.INFORMATION_MESSAGE);
         Limpar();
+        } else {
+            return;
+        }
     }
 
     private void Limpar() {
