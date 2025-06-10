@@ -31,7 +31,8 @@ public class Cadastro extends JFrame {
         tituloLabel = new JLabel("Cadastro de Pessoa");
         tituloLabel.setBounds(30, 30, 600,50);
         tituloLabel.setForeground(Color.orange);
-        tituloLabel.setFont(new Font("Arial", Font.BOLD, 30));
+        tituloLabel.setFont(new Font("Arial", Font.BOLD, 50));
+        tituloLabel.setForeground(new Color(244,123,32));
 
         //Tipo
         tipoLabel = new JLabel("Tipo");
@@ -41,6 +42,7 @@ public class Cadastro extends JFrame {
         tipoCombo.setBounds(210,110,170,30);
         tipoLabel.setVerticalAlignment(JLabel.CENTER);
         tipoLabel.setHorizontalAlignment(JLabel.CENTER);
+        tipoLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //CPF/CPNPJ
         cpfLabel = new JLabel("CPF/CNPJ ...");
@@ -49,6 +51,7 @@ public class Cadastro extends JFrame {
         cpfField.setBounds(580,110,200,30);
         cpfLabel.setVerticalAlignment(JLabel.CENTER);
         cpfLabel.setHorizontalAlignment(JLabel.CENTER);
+        cpfLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //Fornecedor
         fornecedorLabel = new JLabel("Fornecedor");
@@ -57,6 +60,7 @@ public class Cadastro extends JFrame {
         fornecedorCheck.setBounds(1000,110,140,30);
         fornecedorLabel.setVerticalAlignment(JLabel.CENTER);
         fornecedorLabel.setHorizontalAlignment(JLabel.CENTER);
+        fornecedorLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //Nome
         nomeLabel = new JLabel("Nome");
@@ -65,6 +69,7 @@ public class Cadastro extends JFrame {
         nomeField.setBounds(210,150,840,30);
         nomeLabel.setVerticalAlignment(JLabel.CENTER);
         nomeLabel.setHorizontalAlignment(JLabel.CENTER);
+        nomeLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //RG
         rgLabel = new JLabel("RG/Inscrição Estadual");
@@ -73,6 +78,7 @@ public class Cadastro extends JFrame {
         rgField.setBounds(210,190,170,30);
         rgLabel.setVerticalAlignment(JLabel.CENTER);
         rgLabel.setHorizontalAlignment(JLabel.CENTER);
+        rgLabel.setBorder(BorderFactory.createLineBorder(Color.black));
         
 
         //Órgão Expedidor
@@ -82,6 +88,7 @@ public class Cadastro extends JFrame {
         orgaoexField.setBounds(580,190,170,30);
         orgaoexLabel.setVerticalAlignment(JLabel.CENTER);
         orgaoexLabel.setHorizontalAlignment(JLabel.CENTER);
+        orgaoexLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //Email
         emailLabel = new JLabel("Email");
@@ -90,6 +97,7 @@ public class Cadastro extends JFrame {
         emailField.setBounds(210,230,351,30);
         emailLabel.setVerticalAlignment(JLabel.CENTER);
         emailLabel.setHorizontalAlignment(JLabel.CENTER);
+        emailLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //CEP
         cepLabel = new JLabel("CEP");
@@ -98,14 +106,17 @@ public class Cadastro extends JFrame {
         cepField.setBounds(770,230,283,30);
         cepLabel.setVerticalAlignment(JLabel.CENTER);
         cepLabel.setHorizontalAlignment(JLabel.CENTER);
+        cepLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //País
         paisLabel = new JLabel("País");
         paisLabel.setBounds(30,270,170,30);
         paisField = new JTextField("BRASIL");
+        paisField.setBackground(new Color(240,240,240));
         paisField.setBounds(210,270,351,30);
         paisLabel.setVerticalAlignment(JLabel.CENTER);
         paisLabel.setHorizontalAlignment(JLabel.CENTER);
+        paisLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //UF
         ufLabel = new JLabel("UF...");
@@ -114,16 +125,20 @@ public class Cadastro extends JFrame {
         ufField1.setBounds(770,270,75,30);
         ufField2 = new JTextField();
         ufField2.setBounds(860,270,192,30);
+        ufField2.setBackground(new Color(240,240,240));
         ufLabel.setVerticalAlignment(JLabel.CENTER);
         ufLabel.setHorizontalAlignment(JLabel.CENTER);
+        ufLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //Município
         municipioLabel = new JLabel("Município");
         municipioLabel.setBounds(30,310,170,30);
         municipioField = new JTextField();
         municipioField.setBounds(210,310,844,30);
+        municipioField.setBackground(new Color(240,240,240));
         municipioLabel.setVerticalAlignment(JLabel.CENTER);
         municipioLabel.setHorizontalAlignment(JLabel.CENTER);
+        municipioLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //Logradouro
         logradouroLabel = new JLabel("Logradouro");
@@ -132,6 +147,7 @@ public class Cadastro extends JFrame {
         logradouroField.setBounds(210,350,844,30);
         logradouroLabel.setVerticalAlignment(JLabel.CENTER);
         logradouroLabel.setHorizontalAlignment(JLabel.CENTER);
+        logradouroLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //Número
         numeroLabel = new JLabel("Número");
@@ -140,6 +156,7 @@ public class Cadastro extends JFrame {
         numeroField.setBounds(210,390,170,30);
         numeroLabel.setVerticalAlignment(JLabel.CENTER);
         numeroLabel.setHorizontalAlignment(JLabel.CENTER);
+        numeroLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //Complemento
         complementoLabel = new JLabel("Complemento");
@@ -148,6 +165,7 @@ public class Cadastro extends JFrame {
         complementoField.setBounds(580,390,476,30);
         complementoLabel.setVerticalAlignment(JLabel.CENTER);
         complementoLabel.setHorizontalAlignment(JLabel.CENTER);
+        complementoLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //Bairro
         bairroLabel = new JLabel("Bairro");
@@ -156,6 +174,7 @@ public class Cadastro extends JFrame {
         bairroField.setBounds(210,430,170,30);
         bairroLabel.setVerticalAlignment(JLabel.CENTER);
         bairroLabel.setHorizontalAlignment(JLabel.CENTER);
+        bairroLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //Telefone
         telefoneLabel = new JLabel("Telefone");
@@ -164,6 +183,7 @@ public class Cadastro extends JFrame {
         telefoneField.setBounds(580,430,170,30);
         telefoneLabel.setVerticalAlignment(JLabel.CENTER);
         telefoneLabel.setHorizontalAlignment(JLabel.CENTER);
+        telefoneLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //Situação
         situacaoLabel = new JLabel("Situação");
@@ -177,6 +197,7 @@ public class Cadastro extends JFrame {
         situacaoGroup.add(inativoButton);
         situacaoLabel.setVerticalAlignment(JLabel.CENTER);
         situacaoLabel.setHorizontalAlignment(JLabel.CENTER);
+        situacaoLabel.setBorder(BorderFactory.createLineBorder(Color.black));
 
         //Confirmar
         confirmarButton = new JButton("Confirmar");
@@ -185,6 +206,8 @@ public class Cadastro extends JFrame {
         confirmarButton.setVerticalAlignment(JLabel.CENTER);
         confirmarButton.setHorizontalAlignment(JLabel.CENTER);
         confirmarButton.addActionListener(e -> Confirmar());
+        confirmarButton.setBackground(new Color(244,123,32));
+        confirmarButton.setForeground(Color.white);
 
         //Excluir
         excluirButton = new JButton("Excluir");
@@ -193,6 +216,8 @@ public class Cadastro extends JFrame {
         excluirButton.setVerticalAlignment(JLabel.CENTER);
         excluirButton.setHorizontalAlignment(JLabel.CENTER);
         excluirButton.addActionListener(e -> Excluir());
+        excluirButton.setBackground(new Color(244,123,32));
+        excluirButton.setForeground(Color.white);
 
         //Limpar
         limparButton = new JButton("Limpar");
