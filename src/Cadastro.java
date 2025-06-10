@@ -3,7 +3,7 @@ import javax.swing.*;
 
 public class Cadastro extends JFrame {
     //Declaração dos componentes
-    private JLabel tipoLabel, cpfLabel, fornecedorLabel, nomeLabel, rgLabel, orgaoexLabel, emailLabel, cepLabel, paisLabel, ufLabel, municipioLabel, logradouroLabel, numeroLabel,complementoLabel, bairroLabel, telefoneLabel, situacaoLabel;
+    private JLabel tituloLabel, tipoLabel, cpfLabel, fornecedorLabel, nomeLabel, rgLabel, orgaoexLabel, emailLabel, cepLabel, paisLabel, ufLabel, municipioLabel, logradouroLabel, numeroLabel,complementoLabel, bairroLabel, telefoneLabel, situacaoLabel;
     private JTextField cpfField, nomeField, rgField, orgaoexField, emailField, cepField, paisField, ufField1, ufField2, municipioField, logradouroField, numeroField, complementoField, bairroField, telefoneField;
     private JComboBox<String> tipoCombo;
     private JCheckBox fornecedorCheck;
@@ -26,6 +26,12 @@ public class Cadastro extends JFrame {
     private void initialization() {
         painel = new JPanel();
         painel.setLayout(null);
+
+        //Título
+        tituloLabel = new JLabel("Cadastro de Pessoa");
+        tituloLabel.setBounds(30, 30, 600,50);
+        tituloLabel.setForeground(Color.orange);
+        tituloLabel.setFont(new Font("Arial", Font.BOLD, 30));
 
         //Tipo
         tipoLabel = new JLabel("Tipo");
@@ -196,6 +202,7 @@ public class Cadastro extends JFrame {
         limparButton.addActionListener(e -> Limpar());
 
         //Adiciona componentes ao painel
+        painel.add(tituloLabel);
         painel.add(tipoLabel);
         painel.add(tipoCombo);
         painel.add(cpfLabel);
